@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign-in.css">
+    <title>Sign In - Kaffee-In</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="your-logo-url.png" alt="KAFFEE IN LOGO">
+        </div>
+    </header>
+    <main>
+        <h1>Sign in or create an account</h1>
+        <p class="required-field">* indicates required field</p>
+        <form id="signInForm">
+            <label for="username">* Username or email address</label>
+            <input type="text" id="username" required>
+            
+            <label for="password">* Password</label>
+            <input type="password" id="password" required>
+            
+            <div class="checkbox">
+                <input type="checkbox" id="keepSignedIn">
+                <label for="keepSignedIn">Keep me signed in. <a href="#">Details</a></label>
+            </div>
+            
+            <p class="links">
+                <a href="#">Forgot your password?</a>
+            </p>
+            <button type="submit" class="sign-in-button">Sign in</button>
+        </form>
+    </main>
+    <footer>
+        <p>JOIN STARBUCKS® REWARDS</p>
+        <button class="join-now-button">Join now</button>
+    </footer>
+    <script src="sign-in.js"></script>
+</body>
+</html>

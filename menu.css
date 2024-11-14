@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 40px; /* Adjust height as needed */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between menu items */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a.active {
+    border-bottom: 2px solid #3e1e17; /* Active link underline */
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between sign in and join now */
+}
+
+.join-button {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none; /* Remove border */
+    font-weight: bold; /* Make text bold */
+}
+
+.sign-in-button {
+    background-color: white; /* White background */
+    color: #333; /* Text color */
+    padding: 10px 15px;
+    border: 1px solid #333; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none;
+    font-weight: bold; /* Make text bold */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 5px; /* Reduced space between products */
+}
+
+.product {
+    background-color: #fff;
+    border: 0px solid #ddd;
+    border-radius: 5px;
+    padding: 10px; /* Reduced padding */
+    margin: 5px; /* Reduced margin */
+    width: 220px; /* Fixed width for product cards */
+    text-align: center;
+    position: relative; /* For absolute positioning of the button */
+    transition: transform 0.3s; /* Smooth transition for floating effect */
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Float effect on hover */
+}
+
+.product-image {
+    width: 100%; /* Make image take full width of the container */
+    height: 150px; /* Fixed height for product images */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+}
+
+.order-button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer */
+    font-weight: bold; /* Make text bold */
+    position: absolute; /* Position button absolutely */
+    bottom: 10px; /* Position it at the bottom of the product card */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Smooth transition for hover */
+}
+
+.product:hover .order-button {
+    opacity: 1; /* Show button on hover */
+}
+
+footer {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-links h3 {
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-order, .footer-signup {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-signup input {
+    padding: 10px;
+    margin-top: 10px;
+    width: calc(100% - 22px); /* Adjust for padding */
+}
+
+.subscribe-button {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-family: FontAwesome; /* Ensure FontAwesome is included for icons */
+}
